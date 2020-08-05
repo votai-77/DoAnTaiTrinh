@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".GiaoDien.MainActivity">
+
+    <LinearLayout
+        android:layout_width="398dp"
+        android:layout_height="226dp"
+        android:background="@color/Black3"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/Black3"
+            android:src="@drawable/logo" />
+
+        <TextView
+            style="@style/TieuDe"
+
+            android:layout_height="120dp"
+            android:background="@color/Black3"
+            android:text="@string/qltbth" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/a"
+        android:layout_height="325dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnLoaiTB"
+            style="@style/ChucNang"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ltb" />
+
+        <Button
+            android:id="@+id/btnTB"
+            style="@style/ChucNang"
+            android:text="@string/tb" />
+
+        <Button
+            android:id="@+id/btnPhongHoc"
+            style="@style/ChucNang"
+            android:text="@string/ph" />
+        <Button
+            android:id="@+id/btnChiTietSD"
+            style="@style/ChucNang"
+            android:text="@string/ctsd" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

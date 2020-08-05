@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="GiaoDien.MainChiTietSuDung">
+    <TextView
+        android:text="@string/ctsd"
+        android:layout_height="72dp"
+        style="@style/TieuDe"></TextView>
+    <LinearLayout
+        style="@style/linear">
+
+        <TextView
+            style="@style/textview"
+            android:layout_width="113dp"
+            android:text="@string/mp" />
+
+        <Spinner
+            android:id="@+id/spMaPhong"
+            style="@style/edittext"
+            android:layout_width="297dp"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linear">
+
+        <TextView
+            style="@style/textview"
+            android:layout_width="113dp"
+            android:text="@string/matb" />
+
+        <Spinner
+            android:id="@+id/spMaTBi"
+            style="@style/edittext"
+            android:layout_width="286dp"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linear"
+        android:layout_width="383dp">
+
+        <TextView
+            style="@style/textview"
+            android:layout_width="wrap_content"
+            android:text="@string/nsd" />
+
+        <EditText
+
+            android:id="@+id/txtNgaySD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="date" />
+
+    </LinearLayout>
+    <LinearLayout
+        style="@style/linear">
+
+        <TextView
+            style="@style/textview"
+            android:layout_width="111dp"
+            android:text="@string/sl" />
+
+        <EditText
+            android:id="@+id/txtSoLuong"
+            style="@style/edittext"
+            android:layout_width="316dp"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnThem"
+            style="@style/ChucNang"
+            android:layout_width="115dp"
+            android:drawableLeft="@drawable/ic_baseline_add_to_photos_24"
+            android:text="@string/them" />\
+
+        <Button
+            android:id="@+id/btnXoa"
+            style="@style/ChucNang"
+            android:layout_width="115dp"
+            android:drawableLeft="@drawable/ic_baseline_delete_forever_24"
+            android:text="@string/xoa" />
+
+        <Button
+            android:id="@+id/btnSua"
+            style="@style/ChucNang"
+            android:layout_width="115dp"
+            android:drawableLeft="@drawable/ic_baseline_create_24"
+            android:text="@string/sua" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvDanhSach"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"></ListView>
+
+
+
+
+</LinearLayout>
